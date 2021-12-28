@@ -1,3 +1,3 @@
 #!/bin/bash
 
-gcc ./main.c -o ./main && ./main
+gcc -O0 main.c -o main && taskset -c 0 ./main
